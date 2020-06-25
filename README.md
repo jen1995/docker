@@ -9,24 +9,24 @@
 2. Запустить в папке docker
 DOCKER_JUPYTER_PORT=9016 DOCKER_TENSORBOARD_PORT=9017 DOCKER_SSH_PORT=9023 WORKINGDIR=/mnt/meteo-storage/eelistr ./run_docker_notebooks.sh
 
-Очистить кэш от собранных докер-образов. 
+Очистить кэш от собранных докер-образов:
 docker system prune
 
-Посмотреть собранные докер-образы
+Посмотреть собранные докер-образы:
 docker images
 
-Остановить докер
+Остановить докер:
 docker stop <NAME> (например, nifty_ride)
   
-Запустить докер с шеллом
+Запустить докер с шеллом:
 docker exec -it <NAME or ID> bash
   
-Подключиться в новый докер по SSH
+Подключиться в новый докер по SSH:
 ssh user@zomb-neurocast.weather.yandex.net -p 9023
 ssh zomb_new (после добавления строчек, аналогичных zomb1, в ~/.ssh/config)
 
-Чтобы конда начала работать с фишом
+Чтобы конда начала работать с фишом:
 source /opt/conda/etc/fish/conf.d/conda.fish
 
-Окружение с tf 1.14
+Окружение с tf 1.14:
 conda activate deeplearning
