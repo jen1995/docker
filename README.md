@@ -30,3 +30,9 @@ source /opt/conda/etc/fish/conf.d/conda.fish
 
 Окружение с tf 1.14:
 conda activate deeplearning
+
+Что добавить в ~/.ssh/config
+Host zomb_new
+    User user
+    HostName zomb-neurosat.zombie.yandex.net
+    Port 9023
