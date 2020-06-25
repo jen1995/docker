@@ -9,7 +9,7 @@
 2. Запустить в папке docker
 DOCKER_JUPYTER_PORT=9016 DOCKER_TENSORBOARD_PORT=9017 DOCKER_SSH_PORT=9023 WORKINGDIR=/mnt/meteo-storage/eelistr ./run_docker_notebooks.sh
 
-Очистить кэш от собранных докер-образов
+Очистить кэш от собранных докер-образов. 
 docker system prune
 
 Посмотреть собранные докер-образы
