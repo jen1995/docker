@@ -1,0 +1,23 @@
+name: deeplearning
+channels:
+  - defaults
+dependencies:
+  - pip
+  - ipykernel
+  - tqdm
+  - opencv
+  - numpy
+  - scipy
+  - tensorflow-gpu=1.14.0
+  - keras
+  - tensorboard
+  - pip:
+    - sklearn
+    - matplotlib
+    - seaborn
+    - scikit-image
+    - imageio
+    - pyglet
+    - psutil
+    - requests
+prefix: /opt/conda/envs/deeplearning
